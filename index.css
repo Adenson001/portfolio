@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+hr {
+  border: 1px solid #484848;
+}
+
+h1 {
+  color: #cfcfcf;
+  font-size: 32px;
+  line-height: 34px;
+  font-weight: 400;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 45px;
+  align-items: center;
+  /* border-radius: 15px; */
+  /* position: fixed; */
+
+  /* top: 30; */
+  /* height: 75px; */
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+
+  /* justify-content: space-between; */
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav-toggle {
+  display: none;
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+}
+
+.open {
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 20px; */
+  }
+  .logo {
+    padding: 20px 0;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 0;
+    overflow: hidden;
+  }
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+  margin-top: 170px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-section {
+    padding: 0 20px;
+  }
+  .container {
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+
+  .container .slackDisplayPicture {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    object-fit: contain;
+  }
+}
+
+.slackDisplayPicture {
+  border-radius: 30px;
+}
+
+.date-calendar {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.date-calendar .container {
+  /* width: 100%;
+  max-width: 500px; */
+  padding: 30px 0;
+  display: flex;
+  gap: 30px;
+  /*
+  justify-content: center; */
+}
+
+.time {
+  background-color: #484848;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 230px;
+}
+
+.useful-links {
+  background-color: #484848;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  width: 230px;
+}
+.time p {
+  color: white;
+}
+.time span {
+  color: #cfcfcf;
+}
+.useful-links a {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: -10px;
+}
+.useful-links h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.useful-links h2,
+.time h2 {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+.time img,
+.useful-links img {
+  background-color: #cfcfcf;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.my-goal {
+  display: flex;
+  padding-top: 30px;
+}
+
+.my-goal .container {
+  gap: 50px;
+}
+
+.my-2yrs-goal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.my-goal h2,
+.my-goal h3,
+.my-goal h4,
+.my-goal p,
+.my-goal ul li,
+.steps-to-achieving-it h3,
+.steps-to-achieving-it ul li {
+  text-transform: none;
+}
+
+/* Add this rule if text-transform is applied on a higher level */
+.my-goal {
+  text-transform: none;
+}
